@@ -1,0 +1,25 @@
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ * @flow strict-local
+ */
+
+import React from 'react';
+import type {Node} from 'react';
+import {NavigationContainer} from "@react-navigation/native"
+import { NativeBaseProvider, Box } from "native-base"
+import AppStack from "src/AppStack"
+
+const App: () => Node = () => {
+  return (
+    <NavigationContainer>
+      <NativeBaseProvider>
+        <AppStack />
+      </NativeBaseProvider>
+    </NavigationContainer>
+  );
+};
+
+export default App;
